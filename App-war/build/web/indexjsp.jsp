@@ -18,7 +18,7 @@
             <input type="text" name="name" value=""/> <br><br>
             Escriba el año de ingreso a su universidad:
             <input type="text" name="anoingreso" value=""/> <br><br>
-            
+            <%--BUENAS--%>
               <input type="submit" value="Enviar" />
             
               

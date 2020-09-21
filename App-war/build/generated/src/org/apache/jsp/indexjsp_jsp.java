@@ -57,7 +57,8 @@ public final class indexjsp_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("            <input type=\"text\" name=\"name\" value=\"\"/> <br><br>\n");
       out.write("            Escriba el año de ingreso a su universidad:\n");
       out.write("            <input type=\"text\" name=\"anoingreso\" value=\"\"/> <br><br>\n");
-      out.write("            \n");
+      out.write("            ");
+      out.write("\n");
       out.write("              <input type=\"submit\" value=\"Enviar\" />\n");
       out.write("            \n");
       out.write("              \n");
