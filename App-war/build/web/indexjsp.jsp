@@ -14,11 +14,14 @@
     <body>
         <h1>Formulario</h1>
         <form name="Name input form" action="responsejsp.jsp">
-            Escriba su nombre:
-            <input type="text" name="name" value=""/> <br><br>
-            Escriba el año de ingreso a su universidad:
-            <input type="text" name="anoingreso" value=""/> <br><br>
-            <%--BUENAS--%>
+            <p> Escriba su nombre:
+                <input type="text" name="name" value=""/> </p>
+            <p> Escriba el año de ingreso a su universidad:
+            <input type="text" name="anoingreso" value=""/> </p>
+            <p> Escriba el semestre que ingreso a la universidad:
+                <input type="text" name="semestre" value=""/> </p>
+             <p> Escriba el año en que nació:
+                <input type="text" name="anonaciemiento" value=""/> </p>
               <input type="submit" value="Enviar" />
             
               

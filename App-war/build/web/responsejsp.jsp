@@ -17,8 +17,14 @@
         <jsp:setProperty name="mybean" property="name" />
         Su nombre es :
         <jsp:getProperty name="mybean" property="name"/>
-        <jsp:setProperty name="mybean" property="anoingreso"/><br><br>
-        El año de ingreso a su universidad es:
-        <jsp:getProperty name="mybean" property="anoingreso"/>
+        <p><jsp:setProperty name="mybean" property="anonaciemiento"/>
+        Su edad es:
+        <jsp:getProperty name="mybean" property="anonaciemiento"/></p>
+        <p><jsp:setProperty name="mybean" property="anoingreso"/>
+        Año de ingreso a la universidad:
+        <jsp:getProperty name="mybean" property="anoingreso"/></p>
+        <p><jsp:setProperty name="mybean" property="semestre"/>
+        Semestre en el que va:
+        <jsp:getProperty name="mybean" property="semestre"/></p>
     </body>
 </html>

@@ -11,64 +11,90 @@ package co.edu.unipiloto.hello;
  */
 public class NameHandler {
 
-    private String name, anoingreso;
-    private int semestre, dia, mes, año;
+    private String name;
+    private int semestre, dianacimiento, mesnacimiento, anonaciemiento, anoingreso, mesingreso,resultado;
 
     public NameHandler() {
         name = null;
-        anoingreso = null;
+        //anoingreso = 0;
         semestre = 0;
-        dia = 0;
-        mes = 0;
-        año = 0;
+        dianacimiento = 0;
+        mesnacimiento = 0;
+        anonaciemiento = 0;
+        mesingreso = 0;
+        resultado=0;
     }
+
+    public int semestres() {
+        if (semestre==1){
+            resultado=(2020-anoingreso)*2+1;
+        }
+        else{
+            resultado=(2020-anoingreso)*2;
+        }
+        return resultado;
+    }
+     public int edad() {
+        anonaciemiento=2020-anonaciemiento;
+        return anonaciemiento;
+    }
+    
 
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
+
+    public int getMesingreso() {
+        return mesingreso;
     }
 
-    public String getAnoingreso() {
+    public int getAnoingreso() {
         return anoingreso;
     }
 
     public int getSemestre() {
-        return semestre;
+        return semestres();
     }
 
-    public int getDia() {
-        return dia;
+    public int getDianacimiento() {
+        return dianacimiento;
     }
 
-    public int getMes() {
-        return mes;
+    public int getMesnacimiento() {
+        return mesnacimiento;
     }
 
-    public int getAño() {
-        return año;
-    }
-
-    public void setAnoingreso(String anoingreso) {
-        this.anoingreso = anoingreso;
+    public int getAnonaciemiento() {
+        return edad();
     }
 
     public void setSemestre(int semestre) {
         this.semestre = semestre;
     }
 
-    public void setDia(int dia) {
-        this.dia = dia;
+    public void setDianacimiento(int dianacimiento) {
+        this.dianacimiento = dianacimiento;
     }
 
-    public void setMes(int mes) {
-        this.mes = mes;
+    public void setMesnacimiento(int mesnacimiento) {
+        this.mesnacimiento = mesnacimiento;
     }
 
-    public void setAño(int año) {
-        this.año = año;
+    public void setAnonaciemiento(int anonaciemiento) {
+        this.anonaciemiento = anonaciemiento;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setAnoingreso(int anoingreso) {
+        this.anoingreso = anoingreso;
+    }
+
+    public void setMesingreso(int mesingreso) {
+        this.mesingreso = mesingreso;
     }
 
 }
